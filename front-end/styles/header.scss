@@ -1,0 +1,91 @@
+@import './varibles.scss';
+
+.header_container {
+    margin-top: 25px;
+}
+
+.header_text {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.color-gray {
+    opacity: 0.5;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+
+    &_left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+
+        // background: #000;
+        &_phone {
+            display: flex;
+
+            &_text {
+                color: #000;
+                font-size: 18px;
+                font-weight: 600; 
+            }
+        }
+
+    }
+
+    &_rigth {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+
+        &_lang {
+            display: flex;
+            justify-content: space-between;
+
+            &_border {
+                height: 100%;
+                width: 2px;
+                background: #000;
+                opacity: 0.5;
+                margin: 0 4px;
+            }
+        }
+    }
+}
+.header_bottom{
+    display: flex;
+    justify-content: space-between;
+    &_title{
+        font-weight: 700;
+        font-size: 40px;
+        // background: #000;
+    }
+    &_search{
+        // b&ackground: #000;
+        border: 2px solid $orange_color;
+        display: flex;
+        border-radius: 5px;
+        justify-content: space-between;
+        height: 40px;
+        width: 45%;
+        & input{ 
+            border: none;
+            margin-left: 2px;
+        }    
+        &_ico{
+            width: 50px;
+            background: $orange_color;
+            &_image{
+                margin: 100px;
+            }
+        }
+    }
+    &_icons{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
